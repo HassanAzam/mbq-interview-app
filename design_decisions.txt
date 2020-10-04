@@ -1,0 +1,27 @@
+
+Design Decisions
+----------------
+
+- There will be UserModel, and 3 types of users. Admin, Interviewer and Interviewee
+- Interviewer can create questions which will get saved to QuestionModel
+- Interviewer can create an InterviewModel, in which questions will be selected to be the part of Interview
+- An interview key will also be created against each interview
+
+- Interviewee will be given the key, and interview bound to that key will be started
+- Interviewee will submit the answers and they will recorded in UserAnswerModel
+
+
+APIs
+----
+
+- /api/interview
+- /api/questions
+- /api/interview/start (needs exam/interview key)
+- /api/question/submit_answer
+
+
+API for Versioned QuestionSet
+-----------------------------
+
+/api/interview/<interviewkey>
+It will return interview with specific set of questions

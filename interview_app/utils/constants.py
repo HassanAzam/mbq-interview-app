@@ -1,0 +1,13 @@
+"""
+users app constants
+"""
+
+# User Role
+
+ID_USER_TYPE_ADMIN = 1
+ID_USER_TYPE_INTERVIEWER = 2
+ID_USER_TYPE_INTERVIEWEE = 3
+
+USER_TYPE_ADMIN = "admin"
+USER_TYPE_INTERVIEWER = "interviewer"
+USER_TYPE_INTERVIEWEE = "interviewee"
